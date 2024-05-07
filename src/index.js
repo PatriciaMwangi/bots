@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App} from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Bot from './componenets/bot';
+import Enlisted from './componenets/enlisted';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>
+  },
+  {
+    path:"/bots/:id",
+    element:<Bot/>
+  },{
+    path:'/bots/:id',
+    element:<Enlisted/>
+  }
+]);
 root.render(
   <React.StrictMode>
-    <App />
+ <RouterProvider router={router} />
   </React.StrictMode>
 );
 
