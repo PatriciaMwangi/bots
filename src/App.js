@@ -40,7 +40,7 @@ const releaseBot = (bot) => {
     <Sort bots={bots}/>
     <Class bots={bots}/>
     <h1>Bot army</h1>
-  <YourBotArmy  releaseBot={releaseBot} army={army}/>
+  <YourBotArmy  releaseBot={releaseBot} army={army} setArmy={setArmy}/>
 
    <Botcollection bots={bots} enlistBot={enlistBot} />
    

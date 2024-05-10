@@ -5,7 +5,7 @@ import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Bot from './componenets/bot';
-import Enlisted from './componenets/enlisted';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
@@ -15,9 +15,6 @@ const router = createBrowserRouter([
   {
     path:"/bots/:id",
     element:<Bot/>
-  },{
-    path:'/bots/:id',
-    element:<Enlisted/>
   }
 ]);
 root.render(

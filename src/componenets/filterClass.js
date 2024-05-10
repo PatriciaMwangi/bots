@@ -38,7 +38,7 @@ let filtered=bots.filter((b)=>{
 <ul>
     {filtered.map((m)=>(
         <li>
-            <Link to={`/bots/${m.id}`}>
+            <Link to={`/bots/}`}>
             <img src={m.avatar_url} alt={m.name}/>
             </Link>
            Class: {m.bot_class}

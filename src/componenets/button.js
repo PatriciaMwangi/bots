@@ -1,7 +1,7 @@
-import React, { useState} from "react";
+//import React, { useState} from "react";
 
 export default function Button({ selectBot }) {
-    const[postedCategories,setPostedCategories]=useState({})
+ /*   const[postedCategories,setPostedCategories]=useState({})
 
    const enlisted = (id) => {
           
@@ -15,6 +15,7 @@ export default function Button({ selectBot }) {
             .then((res) => {
                 if (res.ok) {
                     console.log("Bot enlisted successfully");
+                    return res.json()
                 } else {
                     console.error("Failed to enlist bot:", res.statusText);
                 }
@@ -22,7 +23,7 @@ export default function Button({ selectBot }) {
             .then((dta)=>setPostedCategories(dta))
             .catch((error) => console.error("Error enlisting bot:", error));
        
-    };
+    };*/
     
     
 
@@ -46,7 +47,6 @@ export default function Button({ selectBot }) {
 
     return (
         <>
-            <button className='btn btn m-3 p-3' onClick={() => enlisted()}>Enlist to your API</button>
             <button className='btn btn m-3 p-3' onClick={()=>discharged(selectBot.id)}>Permanently Discharge</button>
         </>
     );
