@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import YourBotArmy from './YourBotArmy'
-import { setBots } from './BotCollection'
+//import YourBotArmy from './YourBotArmy'
+//import { setBots } from './BotCollection'
 import Button from './button'
 
 export default function Bot(){ 
@@ -12,7 +12,7 @@ const [selectBot,setSelectBot]=useState({})
        fetch(`https://json-server-sg8o.onrender.com/bots/${id}`)
     .then((res)=>res.json())
     .then((data)=>setSelectBot({...data}))
-   },[])
+   },[id])
    console.log(selectBot,'set')
    }
   Enlist(id)
@@ -22,7 +22,7 @@ const [selectBot,setSelectBot]=useState({})
    <ul>
      
               <li>ID: {selectBot.id}</li>
-                        <li>//Name: {selectBot.name}</li>
+                        <li>Name: {selectBot.name}</li>
                         <li>Health: {selectBot.health}</li>
                         <li>Damage: {selectBot.damage}</li>
                         <li>Armor: {selectBot.armor}</li>

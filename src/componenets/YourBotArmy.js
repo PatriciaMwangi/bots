@@ -1,9 +1,9 @@
 import React from 'react';
 const YourBotArmy = ({ army, releaseBot }) => {
 console.log(army,'a') 
- const handleCardClick = (bot) => {
+ /*const handleCardClick = (bot) => {
     console.log(`Clicked on ${bot.name}`);
-  };
+  };*/
 
   return (
     <div className='d-flex justify-content-center flex-wrap ' style={{gap:'1rem'}} >
