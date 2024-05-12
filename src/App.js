@@ -14,6 +14,11 @@ export function App() {
 console.log(bots,'bu')
 
 const enlistBot = (bot) => {
+  if (army.some((b)=>b.id===bot.id || b.bot_class===bot.bot_class)){
+    alert(`You've added me or someone from my bot already`)
+    console.log(alert,'al')
+    return;
+  }
   setArmy([...army, bot]);
   console.log(bot,'arg')
   setBotss(botss.filter(b => b.id !== bot.id));
@@ -37,8 +42,8 @@ const releaseBot = (bot) => {
   return (
     <>
     
-    <Sort bots={bots}/>
-    <Class bots={bots}/>
+    <Sort bots={bots} />
+    <Class bots={bots} enlistBot={enlistBot}/>
     <h1>Bot army</h1>
   <YourBotArmy  releaseBot={releaseBot} army={army} setArmy={setArmy}/>
 

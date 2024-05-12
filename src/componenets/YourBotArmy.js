@@ -13,7 +13,7 @@ console.log(army,'a')
       <div className="card-body">
         <h5 className="card-title">{bot.name}</h5>
         <p className="card-text">{bot.catchphrase}</p>
-        <p className="card-text"> ❤️{bot.health } ⚡{bot.damage} 🛡️{bot.armor}</p>
+        <p className="card-text"> &#128158;{bot.health } &#x1F4A5;{bot.damage} &#128737; {bot.armor}</p>
       </div>
     </div>
       

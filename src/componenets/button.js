@@ -1,10 +1,11 @@
 //import React, { useState} from "react";
 
 export default function Button({ selectBot }) {
- /*   const[postedCategories,setPostedCategories]=useState({})
+ //const[postedCategories,setPostedCategories]=useState(null)
+ //const[disable,setDisable]=useState(false)
 
-   const enlisted = (id) => {
-          
+   /*const enlisted = (id) => {
+          setDisable(true)
             fetch(`http://localhost:3001/yourbotarmy/`, {
                 method: 'POST',
                 headers: {
@@ -21,7 +22,8 @@ export default function Button({ selectBot }) {
                 }
             })
             .then((dta)=>setPostedCategories(dta))
-            .catch((error) => console.error("Error enlisting bot:", error));
+            .catch((error) => console.error("Error enlisting bot:", error))
+            .finally(()=>setDisable(false))//resets it even when the function fails
        
     };*/
     
